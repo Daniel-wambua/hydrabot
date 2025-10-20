@@ -46,3 +46,4 @@ env/
 
 #Ignore vscode AI rules
 .github/instructions/codacy.instructions.md
+SETUP_COMPLETE.md

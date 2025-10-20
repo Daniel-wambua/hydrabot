@@ -1,189 +1,376 @@
-<h1 align="center">💧 HydraBot - Smart Reminder Assistant</h1># 💧 HydraBot - Smart Reminder Assistant# 💧 HydraBot - Smart Reminder Assistant
+<h1 align="center">💧 HydraBot</h1><h1 align="center">💧 HydraBot - Smart Reminder Assistant</h1># 💧 HydraBot - Smart Reminder Assistant# 💧 HydraBot - Smart Reminder Assistant
 
 <p align="center">
 
-<a href="https://github.com/Daniel-wambua/hydrabot"><img src="https://i.ibb.co/7JMXxbF/hydra.png" width="120" /><br /></a>
+<a href="https://github.com/Daniel-wambua/hydrabot"><img src="https://i.ibb.co/7JMXxbF/hydra.png" width="120" /><br /></a><p align="center">
 
-<i>A text-based smart reminder assistant that works via SMS or Telegram</i>
+<i>Smart text-based reminder assistant via SMS or Telegram</i>
 
-<br />A text-based smart reminder assistant that works via **SMS (Twilio)** or **Telegram**. Set reminders, track habits, and get notifications—all through simple text messages.A text-based smart reminder assistant that combines health tracking and personal reminders. Users interact entirely through SMS (Twilio) or Telegram to set, manage, and complete reminders.
+<br /><a href="https://github.com/Daniel-wambua/hydrabot"><img src="https://i.ibb.co/7JMXxbF/hydra.png" width="120" /><br /></a>
 
-<i>Set reminders, track habits, and get notifications—all through simple text messages</i>
+<i>Never miss hydration, medication, or important tasks</i>
 
-<br />
+<br /><i>A text-based smart reminder assistant that works via SMS or Telegram</i>
 
 <b>🌐 <a href="https://github.com/Daniel-wambua/hydrabot">github.com/Daniel-wambua/hydrabot</a></b> <br />
 
-</p>---## ✨ Features
+</p><br />A text-based smart reminder assistant that works via **SMS (Twilio)** or **Telegram**. Set reminders, track habits, and get notifications—all through simple text messages.A text-based smart reminder assistant that combines health tracking and personal reminders. Users interact entirely through SMS (Twilio) or Telegram to set, manage, and complete reminders.
 
 
 
-## Motive
+## Motive<i>Set reminders, track habits, and get notifications—all through simple text messages</i>
 
-To create a simple, text-based reminder system that anyone can use without installing an app. 
+Why spend hours managing reminders when you can automate them with a simple text message?
 
-All interactions happen via SMS or Telegram messages. Set recurring reminders for hydration, medication, or any habit you want to track. The bot sends you timely reminders, and you simply reply "done" to mark them complete. Built this way so you don't need to f\*\*k around with complicated habit-tracking apps.## 🌟 Features- **Text-based interaction** - No app required, just text messages
+HydraBot eliminates the need for complicated apps. Just text commands like "remind me to drink water every 2 hours" and reply "done" when complete. Built this way so you don't need to f\*\*k around with app installations and accounts.<br />
 
 
 
-<details>- **Recurring reminders** - "remind me to drink water every 2 hours"
+<details><b>🌐 <a href="https://github.com/Daniel-wambua/hydrabot">github.com/Daniel-wambua/hydrabot</a></b> <br />
 
   <summary>About the Developer</summary>
 
-- **📱 Text-Based Interaction** - No app required, just text messages- **One-time reminders** - "remind me to call mom at 6pm"
+</p>---## ✨ Features
 
 > **Professional Background**<br>
 
-> I'm an experienced, Principal-level full stack engineer with a passion for quality, performance, mentoring, technology and open source. I believe the best judge of a developer is their code, and while I cannot share proprietary work, I have many open source projects on my [GitHub](https://github.com/Daniel-wambua) and showcase my skills at [danielwambua.dev](https://danielwambua.dev).- **🔄 Recurring Reminders** - "remind me to drink water every 2 hours"- **Quick completion** - Reply "done" to mark reminders complete
-
->
-
-> This HydraBot project reflects my philosophy: build practical tools that solve real problems with elegant, maintainable code. The entire system is designed for reliability, ease of deployment, and extensibility.- **⏰ One-Time Reminders** - "remind me to call mom at 6pm"- **Smart scheduling** - Recurring reminders reset when you respond "done"
+> I'm an experienced, Principal-level full stack engineer with a passion for quality, performance, mentoring, technology and open source. I believe the best judge of a developer is their code, and while I cannot share proprietary work, I have many open source projects on my [GitHub](https://github.com/Daniel-wambua) and showcase my skills at [danielwambua.dev](https://danielwambua.dev).
 
 
 
-</details>- **✅ Quick Completion** - Reply "done" to mark reminders complete- **Stats tracking** - Track your hydration streak and completion history
+</details>## Motive
 
 
 
----- **🔥 Smart Scheduling** - Intervals reset when you respond "done"- **Dual platform support** - Works with both SMS (Twilio) and Telegram
+---To create a simple, text-based reminder system that anyone can use without installing an app. 
 
 
 
-## About- **📊 Stats Tracking** - Track hydration streaks and completion history
+## AboutAll interactions happen via SMS or Telegram messages. Set recurring reminders for hydration, medication, or any habit you want to track. The bot sends you timely reminders, and you simply reply "done" to mark them complete. Built this way so you don't need to f\*\*k around with complicated habit-tracking apps.## 🌟 Features- **Text-based interaction** - No app required, just text messages
 
 
 
-HydraBot is a Python-based reminder assistant powered by FastAPI and SQLAlchemy. The system features:- **🎯 Natural Language** - Works with everyday language## 🚀 Quick Start
+HydraBot is a Python-based reminder assistant that works entirely through text messages. No app downloads, no complex setup—just pure text-based interaction.
 
 
 
-- **Natural Language Processing** - Parse commands like "remind me to drink water every 2 hours"
+**Core Features:**<details>- **Recurring reminders** - "remind me to drink water every 2 hours"
 
-- **Dual Platform Support** - Works with both Twilio (SMS) and Telegram
+- 📱 SMS (Twilio) or Telegram support
 
-- **Smart Scheduling** - APScheduler handles background reminder dispatch---### Prerequisites
+- 🔄 Recurring reminders with smart intervals  <summary>About the Developer</summary>
 
-- **Streak Tracking** - Monitors consecutive-day hydration habits
+- ⏰ One-time scheduled reminders
 
-- **Database Persistence** - SQLite for local deployments, easily upgradable to PostgreSQL
+- ✅ Simple "done" responses- **📱 Text-Based Interaction** - No app required, just text messages- **One-time reminders** - "remind me to call mom at 6pm"
 
-- **CLI Management** - Command-line tools for administration
+- 📊 Habit streak tracking
 
-- **Docker Ready** - Containerized deployment with docker-compose## 🚀 Quick Start (5 Minutes)- Python 3.8+
-
-
-
-The architecture follows clean separation of concerns: webhooks in `main.py`, business logic in `reminder_service.py`, messaging abstraction in `messaging_service.py`, and background jobs in `scheduler.py`.- Twilio account (for SMS) OR Telegram Bot Token
+- 🗄️ SQLite database (PostgreSQL ready)> **Professional Background**<br>
 
 
 
-Why? ...Because why spend 2 minutes setting a phone reminder, when you could build an entire reminder automation system, obviously!### Prerequisites- SQLite (included with Python)
+**Tech Stack:**> I'm an experienced, Principal-level full stack engineer with a passion for quality, performance, mentoring, technology and open source. I believe the best judge of a developer is their code, and while I cannot share proprietary work, I have many open source projects on my [GitHub](https://github.com/Daniel-wambua) and showcase my skills at [danielwambua.dev](https://danielwambua.dev).- **🔄 Recurring Reminders** - "remind me to drink water every 2 hours"- **Quick completion** - Reply "done" to mark reminders complete
+
+- FastAPI for webhooks
+
+- SQLAlchemy ORM>
+
+- APScheduler for background jobs
+
+- Docker-ready deployment> This HydraBot project reflects my philosophy: build practical tools that solve real problems with elegant, maintainable code. The entire system is designed for reliability, ease of deployment, and extensibility.- **⏰ One-Time Reminders** - "remind me to call mom at 6pm"- **Smart scheduling** - Recurring reminders reset when you respond "done"
 
 
-
----- Python 3.8+ (Python 3.13 supported)
-
-
-
-## Features- Telegram account OR Twilio account (for SMS)### Installation
-
-
-
-- 📱 **Text-Based Interaction** - No app required, just text messages
-
-- 🔄 **Recurring Reminders** - "remind me to drink water every 2 hours"
-
-- ⏰ **One-Time Reminders** - "remind me to call mom at 6pm"### Installation1. **Clone and navigate to the project:**
-
-- ✅ **Quick Completion** - Reply "done" to mark reminders complete
-
-- 🔥 **Smart Scheduling** - Intervals reset when you respond "done"```bash
-
-- 📊 **Stats Tracking** - Track hydration streaks and completion history
-
-- 🎯 **Natural Language** - Works with everyday language```bashcd hydrabot
-
-- 🌐 **Multi-Platform** - SMS (Twilio) or Telegram support
-
-# 1. Clone/navigate to project```
 
 ---
 
-cd hydrabot
 
-## Usage
 
-2. **Create virtual environment:**
+## Quick Start</details>- **✅ Quick Completion** - Reply "done" to mark reminders complete- **Stats tracking** - Track your hydration streak and completion history
 
-### Quick Start (5 Minutes)
 
-# 2. Run automated setup```bash
-
-1. Clone the repo
-
-2. Install dependencieschmod +x setup.shpython -m venv venv
-
-3. Configure platform (Telegram or Twilio)
-
-4. Start the server./setup.shsource venv/bin/activate  # On Windows: venv\Scripts\activate
-
-5. Set up webhook
-
-```
-
-<details><summary>Detailed Setup Instructions</summary>
-
-# Or manual setup:
-
-#### Prerequisites
-
-- Python 3.8+ (Python 3.13 supported)python3 -m venv venv3. **Install dependencies:**
-
-- Telegram account OR Twilio account (for SMS)
-
-source venv/bin/activate```bash
-
-#### Installation
-
-pip install -r requirements.txtpip install -r requirements.txt
 
 ```bash
 
-# Clone and navigatecp .env.example .env```
+# Clone the repo
+
+git clone https://github.com/Daniel-wambua/hydrabot.git---- **🔥 Smart Scheduling** - Intervals reset when you respond "done"- **Dual platform support** - Works with both SMS (Twilio) and Telegram
 
 cd hydrabot
 
-```
 
-# Run automated setup
 
-chmod +x setup.sh4. **Set up environment variables:**
+# Setup
 
-./setup.sh
+./setup.sh## About- **📊 Stats Tracking** - Track hydration streaks and completion history
 
-### Configuration```bash
 
-# Or manual setup:
 
-python3 -m venv venvcp .env.example .env
-
-source venv/bin/activate
-
-pip install -r requirements.txtEdit `.env` file with your credentials:```
+# Configure (edit .env with your API keys)
 
 cp .env.example .env
 
+HydraBot is a Python-based reminder assistant powered by FastAPI and SQLAlchemy. The system features:- **🎯 Natural Language** - Works with everyday language## 🚀 Quick Start
+
+# Run
+
+python main.py
+
 ```
 
+- **Natural Language Processing** - Parse commands like "remind me to drink water every 2 hours"
+
+<details><summary>Deployment Options</summary>
+
+- **Dual Platform Support** - Works with both Twilio (SMS) and Telegram
+
+- **Docker**: `docker-compose up -d`
+
+- **Replit**: Import repo, add secrets, run- **Smart Scheduling** - APScheduler handles background reminder dispatch---### Prerequisites
+
+- **Render/Railway**: Connect repo, deploy
+
+- **VPS**: Clone, setup, run with systemd- **Streak Tracking** - Monitors consecutive-day hydration habits
 
 
-#### Configuration#### Option A: Telegram (Recommended - Free & Easy)Edit `.env` and add your API keys:
+
+</details>- **Database Persistence** - SQLite for local deployments, easily upgradable to PostgreSQL
 
 
 
-Edit `.env` file with your credentials:
+---- **CLI Management** - Command-line tools for administration
 
+
+
+## Usage- **Docker Ready** - Containerized deployment with docker-compose## 🚀 Quick Start (5 Minutes)- Python 3.8+
+
+
+
+| Command | Example |
+
+|---------|---------|
+
+| Set recurring | `remind me to drink water every 2 hours` |The architecture follows clean separation of concerns: webhooks in `main.py`, business logic in `reminder_service.py`, messaging abstraction in `messaging_service.py`, and background jobs in `scheduler.py`.- Twilio account (for SMS) OR Telegram Bot Token
+
+| Set one-time | `remind me to call mom at 6pm` |
+
+| Mark complete | `done` |
+
+| View stats | `stats` |
+
+| List all | `list reminders` |Why? ...Because why spend 2 minutes setting a phone reminder, when you could build an entire reminder automation system, obviously!### Prerequisites- SQLite (included with Python)
+
+| Cancel | `cancel water reminders` |
+
+
+
+**Example Flow:**
+
+```---- Python 3.8+ (Python 3.13 supported)
+
+You: remind me to drink water every 2 hours
+
+Bot: ✅ Reminder set! I'll remind you every 2 hours.
+
+
+
+[2 hours later...]## Features- Telegram account OR Twilio account (for SMS)### Installation
+
+Bot: ⏰ Reminder: drink water
+
+
+
+You: done
+
+Bot: ✅ Great! I'll remind you again in 2 hours.- 📱 **Text-Based Interaction** - No app required, just text messages
+
+```
+
+- 🔄 **Recurring Reminders** - "remind me to drink water every 2 hours"
+
+---
+
+- ⏰ **One-Time Reminders** - "remind me to call mom at 6pm"### Installation1. **Clone and navigate to the project:**
+
+## Architecture
+
+- ✅ **Quick Completion** - Reply "done" to mark reminders complete
+
+```
+
+hydrabot/- 🔥 **Smart Scheduling** - Intervals reset when you respond "done"```bash
+
+├── main.py              # FastAPI webhooks
+
+├── models.py            # Database schemas- 📊 **Stats Tracking** - Track hydration streaks and completion history
+
+├── reminder_service.py  # Business logic
+
+├── messaging_service.py # SMS/Telegram- 🎯 **Natural Language** - Works with everyday language```bashcd hydrabot
+
+├── scheduler.py         # Background jobs
+
+└── cli.py              # Admin tools- 🌐 **Multi-Platform** - SMS (Twilio) or Telegram support
+
+```
+
+# 1. Clone/navigate to project```
+
+**How It Works:**
+
+```---
+
+Message → Webhook → Parse → Database → Response
+
+                                ↓cd hydrabot
+
+                    Scheduler → Send Reminders
+
+```## Usage
+
+
+
+---2. **Create virtual environment:**
+
+
+
+## Contributing### Quick Start (5 Minutes)
+
+
+
+Contributions welcome! Fork, improve, and submit a PR.# 2. Run automated setup```bash
+
+
+
+**Ideas for enhancement:**1. Clone the repo
+
+- WhatsApp/Discord support
+
+- Web dashboard2. Install dependencieschmod +x setup.shpython -m venv venv
+
+- Voice commands
+
+- Smart scheduling with ML3. Configure platform (Telegram or Twilio)
+
+
+
+---4. Start the server./setup.shsource venv/bin/activate  # On Windows: venv\Scripts\activate
+
+
+
+## License5. Set up webhook
+
+
+
+> _**[Daniel-wambua/hydrabot](https://github.com/Daniel-wambua/hydrabot)** is licensed under [MIT](https://github.com/Daniel-wambua/hydrabot/blob/HEAD/LICENSE) © [Daniel Wambua](https://danielwambua.dev) 2025._<br>```
+
+> <sup align="right">For information, see <a href="https://tldrlegal.com/license/mit-license">TLDR Legal > MIT</a></sup>
+
+<details><summary>Detailed Setup Instructions</summary>
+
+<details>
+
+<summary>Expand License</summary># Or manual setup:
+
+
+
+```#### Prerequisites
+
+The MIT License (MIT)
+
+Copyright (c) Daniel Wambua <daniel@wambua.com>- Python 3.8+ (Python 3.13 supported)python3 -m venv venv3. **Install dependencies:**
+
+
+
+Permission is hereby granted, free of charge, to any person obtaining a copy - Telegram account OR Twilio account (for SMS)
+
+of this software and associated documentation files (the "Software"), to deal 
+
+in the Software without restriction, including without limitation the rights source venv/bin/activate```bash
+
+to use, copy, modify, merge, publish, distribute, sub-license, and/or sell 
+
+copies of the Software, and to permit persons to whom the Software is furnished #### Installation
+
+to do so, subject to the following conditions:
+
+pip install -r requirements.txtpip install -r requirements.txt
+
+The above copyright notice and this permission notice shall be included in all 
+
+copies or substantial portions of the Software.```bash
+
+
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,# Clone and navigatecp .env.example .env```
+
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+
+PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHTcd hydrabot
+
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE```
+
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+```# Run automated setup
+
+
+
+</details>chmod +x setup.sh4. **Set up environment variables:**
+
+
+
+---./setup.sh
+
+
+
+<!-- License + Copyright -->### Configuration```bash
+
+<p align="center">
+
+  <i>© <a href="https://danielwambua.dev">Daniel Wambua</a> 2025</i><br># Or manual setup:
+
+  <i>Licensed under <a href="https://gist.github.com/Daniel-wambua/143d2ee01ccc5c052a17">MIT</a></i><br>
+
+  <a href="https://github.com/Daniel-wambua"><img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" /></a><br>python3 -m venv venvcp .env.example .env
+
+  <sup>Thanks for visiting :)</sup>
+
+</p>source venv/bin/activate
+
+
+
+<!-- ASCII Art -->pip install -r requirements.txtEdit `.env` file with your credentials:```
+
+<!-- 
+
+                    🌊 Stay Hydrated 🌊cp .env.example .env
+
+                    
+
+         _____```
+
+        /     \
+
+       | () () |    "Drink water!"
+
+        \  ^  /
+
+         |||||#### Configuration#### Option A: Telegram (Recommended - Free & Easy)Edit `.env` and add your API keys:
+
+         |||||
+
+         
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+       H Y D R A B O T   2 0 2 5Edit `.env` file with your credentials:
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-->
 
 
 **Option A: Telegram (Recommended - Free & Easy)**```env**For Telegram (recommended for testing):**
