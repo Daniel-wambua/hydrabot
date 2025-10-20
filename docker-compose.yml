@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  hydrabot:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - HOST=0.0.0.0
+      - MESSAGING_PLATFORM=${MESSAGING_PLATFORM}
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TWILIO_ACCOUNT_SID=${TWILIO_ACCOUNT_SID}
+      - TWILIO_AUTH_TOKEN=${TWILIO_AUTH_TOKEN}
+      - TWILIO_PHONE_NUMBER=${TWILIO_PHONE_NUMBER}
+      - DATABASE_URL=sqlite:///./hydrabot.db
+    volumes:
+      - ./hydrabot.db:/app/hydrabot.db
+    restart: unless-stopped
