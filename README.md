@@ -1,542 +1,1082 @@
-# 💧 HydraBot - Smart Reminder Assistant# 💧 HydraBot - Smart Reminder Assistant
+<h1 align="center">💧 HydraBot - Smart Reminder Assistant</h1># 💧 HydraBot - Smart Reminder Assistant# 💧 HydraBot - Smart Reminder Assistant
+
+<p align="center">
+
+<a href="https://github.com/Daniel-wambua/hydrabot"><img src="https://i.ibb.co/7JMXxbF/hydra.png" width="120" /><br /></a>
+
+<i>A text-based smart reminder assistant that works via SMS or Telegram</i>
+
+<br />A text-based smart reminder assistant that works via **SMS (Twilio)** or **Telegram**. Set reminders, track habits, and get notifications—all through simple text messages.A text-based smart reminder assistant that combines health tracking and personal reminders. Users interact entirely through SMS (Twilio) or Telegram to set, manage, and complete reminders.
+
+<i>Set reminders, track habits, and get notifications—all through simple text messages</i>
+
+<br />
+
+<b>🌐 <a href="https://github.com/Daniel-wambua/hydrabot">github.com/Daniel-wambua/hydrabot</a></b> <br />
+
+</p>---## ✨ Features
 
 
 
-A text-based smart reminder assistant that works via **SMS (Twilio)** or **Telegram**. Set reminders, track habits, and get notifications—all through simple text messages.A text-based smart reminder assistant that combines health tracking and personal reminders. Users interact entirely through SMS (Twilio) or Telegram to set, manage, and complete reminders.
+## Motive
+
+To create a simple, text-based reminder system that anyone can use without installing an app. 
+
+All interactions happen via SMS or Telegram messages. Set recurring reminders for hydration, medication, or any habit you want to track. The bot sends you timely reminders, and you simply reply "done" to mark them complete. Built this way so you don't need to f\*\*k around with complicated habit-tracking apps.## 🌟 Features- **Text-based interaction** - No app required, just text messages
 
 
 
----## ✨ Features
+<details>- **Recurring reminders** - "remind me to drink water every 2 hours"
 
-
-
-## 🌟 Features- **Text-based interaction** - No app required, just text messages
-
-- **Recurring reminders** - "remind me to drink water every 2 hours"
+  <summary>About the Developer</summary>
 
 - **📱 Text-Based Interaction** - No app required, just text messages- **One-time reminders** - "remind me to call mom at 6pm"
 
-- **🔄 Recurring Reminders** - "remind me to drink water every 2 hours"- **Quick completion** - Reply "done" to mark reminders complete
+> **Professional Background**<br>
 
-- **⏰ One-Time Reminders** - "remind me to call mom at 6pm"- **Smart scheduling** - Recurring reminders reset when you respond "done"
+> I'm an experienced, Principal-level full stack engineer with a passion for quality, performance, mentoring, technology and open source. I believe the best judge of a developer is their code, and while I cannot share proprietary work, I have many open source projects on my [GitHub](https://github.com/Daniel-wambua) and showcase my skills at [danielwambua.dev](https://danielwambua.dev).- **🔄 Recurring Reminders** - "remind me to drink water every 2 hours"- **Quick completion** - Reply "done" to mark reminders complete
 
-- **✅ Quick Completion** - Reply "done" to mark reminders complete- **Stats tracking** - Track your hydration streak and completion history
+>
 
-- **🔥 Smart Scheduling** - Intervals reset when you respond "done"- **Dual platform support** - Works with both SMS (Twilio) and Telegram
-
-- **📊 Stats Tracking** - Track hydration streaks and completion history
-
-- **🎯 Natural Language** - Works with everyday language## 🚀 Quick Start
+> This HydraBot project reflects my philosophy: build practical tools that solve real problems with elegant, maintainable code. The entire system is designed for reliability, ease of deployment, and extensibility.- **⏰ One-Time Reminders** - "remind me to call mom at 6pm"- **Smart scheduling** - Recurring reminders reset when you respond "done"
 
 
 
----### Prerequisites
+</details>- **✅ Quick Completion** - Reply "done" to mark reminders complete- **Stats tracking** - Track your hydration streak and completion history
 
 
 
-## 🚀 Quick Start (5 Minutes)- Python 3.8+
-
-- Twilio account (for SMS) OR Telegram Bot Token
-
-### Prerequisites- SQLite (included with Python)
-
-- Python 3.8+ (Python 3.13 supported)
-
-- Telegram account OR Twilio account (for SMS)### Installation
+---- **🔥 Smart Scheduling** - Intervals reset when you respond "done"- **Dual platform support** - Works with both SMS (Twilio) and Telegram
 
 
 
-### Installation1. **Clone and navigate to the project:**
+## About- **📊 Stats Tracking** - Track hydration streaks and completion history
 
-```bash
 
-```bashcd hydrabot
+
+HydraBot is a Python-based reminder assistant powered by FastAPI and SQLAlchemy. The system features:- **🎯 Natural Language** - Works with everyday language## 🚀 Quick Start
+
+
+
+- **Natural Language Processing** - Parse commands like "remind me to drink water every 2 hours"
+
+- **Dual Platform Support** - Works with both Twilio (SMS) and Telegram
+
+- **Smart Scheduling** - APScheduler handles background reminder dispatch---### Prerequisites
+
+- **Streak Tracking** - Monitors consecutive-day hydration habits
+
+- **Database Persistence** - SQLite for local deployments, easily upgradable to PostgreSQL
+
+- **CLI Management** - Command-line tools for administration
+
+- **Docker Ready** - Containerized deployment with docker-compose## 🚀 Quick Start (5 Minutes)- Python 3.8+
+
+
+
+The architecture follows clean separation of concerns: webhooks in `main.py`, business logic in `reminder_service.py`, messaging abstraction in `messaging_service.py`, and background jobs in `scheduler.py`.- Twilio account (for SMS) OR Telegram Bot Token
+
+
+
+Why? ...Because why spend 2 minutes setting a phone reminder, when you could build an entire reminder automation system, obviously!### Prerequisites- SQLite (included with Python)
+
+
+
+---- Python 3.8+ (Python 3.13 supported)
+
+
+
+## Features- Telegram account OR Twilio account (for SMS)### Installation
+
+
+
+- 📱 **Text-Based Interaction** - No app required, just text messages
+
+- 🔄 **Recurring Reminders** - "remind me to drink water every 2 hours"
+
+- ⏰ **One-Time Reminders** - "remind me to call mom at 6pm"### Installation1. **Clone and navigate to the project:**
+
+- ✅ **Quick Completion** - Reply "done" to mark reminders complete
+
+- 🔥 **Smart Scheduling** - Intervals reset when you respond "done"```bash
+
+- 📊 **Stats Tracking** - Track hydration streaks and completion history
+
+- 🎯 **Natural Language** - Works with everyday language```bashcd hydrabot
+
+- 🌐 **Multi-Platform** - SMS (Twilio) or Telegram support
 
 # 1. Clone/navigate to project```
 
+---
+
 cd hydrabot
+
+## Usage
 
 2. **Create virtual environment:**
 
+### Quick Start (5 Minutes)
+
 # 2. Run automated setup```bash
 
-chmod +x setup.shpython -m venv venv
+1. Clone the repo
 
-./setup.shsource venv/bin/activate  # On Windows: venv\Scripts\activate
+2. Install dependencieschmod +x setup.shpython -m venv venv
+
+3. Configure platform (Telegram or Twilio)
+
+4. Start the server./setup.shsource venv/bin/activate  # On Windows: venv\Scripts\activate
+
+5. Set up webhook
 
 ```
+
+<details><summary>Detailed Setup Instructions</summary>
 
 # Or manual setup:
 
-python3 -m venv venv3. **Install dependencies:**
+#### Prerequisites
+
+- Python 3.8+ (Python 3.13 supported)python3 -m venv venv3. **Install dependencies:**
+
+- Telegram account OR Twilio account (for SMS)
 
 source venv/bin/activate```bash
 
+#### Installation
+
 pip install -r requirements.txtpip install -r requirements.txt
 
-cp .env.example .env```
+```bash
+
+# Clone and navigatecp .env.example .env```
+
+cd hydrabot
 
 ```
 
-4. **Set up environment variables:**
+# Run automated setup
+
+chmod +x setup.sh4. **Set up environment variables:**
+
+./setup.sh
 
 ### Configuration```bash
 
+# Or manual setup:
+
+python3 -m venv venvcp .env.example .env
+
+source venv/bin/activate
+
+pip install -r requirements.txtEdit `.env` file with your credentials:```
+
 cp .env.example .env
 
-Edit `.env` file with your credentials:```
+```
 
 
 
-#### Option A: Telegram (Recommended - Free & Easy)Edit `.env` and add your API keys:
+#### Configuration#### Option A: Telegram (Recommended - Free & Easy)Edit `.env` and add your API keys:
 
 
 
-```env**For Telegram (recommended for testing):**
+Edit `.env` file with your credentials:
 
-MESSAGING_PLATFORM=telegram```env
 
-TELEGRAM_BOT_TOKEN=your_bot_token_hereMESSAGING_PLATFORM=telegram
+
+**Option A: Telegram (Recommended - Free & Easy)**```env**For Telegram (recommended for testing):**
+
+
+
+```envMESSAGING_PLATFORM=telegram```env
+
+MESSAGING_PLATFORM=telegram
+
+TELEGRAM_BOT_TOKEN=your_bot_token_hereTELEGRAM_BOT_TOKEN=your_bot_token_hereMESSAGING_PLATFORM=telegram
+
+```
 
 ```TELEGRAM_BOT_TOKEN=your_bot_token_here
 
-```
-
 **Get Telegram Token:**
+
+1. Open Telegram, search for `@BotFather````
+
+2. Send: `/newbot`
+
+3. Follow prompts, copy the token**Get Telegram Token:**
+
+4. Paste into `.env`
 
 1. Open Telegram, search for `@BotFather`**For Twilio (SMS):**
 
+**Option B: Twilio SMS**
+
 2. Send: `/newbot````env
-
-3. Follow prompts, copy the tokenMESSAGING_PLATFORM=twilio
-
-4. Paste into `.env`TWILIO_ACCOUNT_SID=your_account_sid
-
-TWILIO_AUTH_TOKEN=your_auth_token
-
-#### Option B: Twilio SMSTWILIO_PHONE_NUMBER=+1234567890
-
-```
 
 ```env
 
-MESSAGING_PLATFORM=twilio5. **Run the application:**
+MESSAGING_PLATFORM=twilio3. Follow prompts, copy the tokenMESSAGING_PLATFORM=twilio
 
-TWILIO_ACCOUNT_SID=your_account_sid```bash
+TWILIO_ACCOUNT_SID=your_account_sid
 
-TWILIO_AUTH_TOKEN=your_auth_tokenpython main.py
+TWILIO_AUTH_TOKEN=your_auth_token4. Paste into `.env`TWILIO_ACCOUNT_SID=your_account_sid
 
-TWILIO_PHONE_NUMBER=+1234567890```
+TWILIO_PHONE_NUMBER=+1234567890
 
-```
+```TWILIO_AUTH_TOKEN=your_auth_token
 
-The server will start on `http://localhost:8000`
 
-**Get Twilio Credentials:**
 
-1. Sign up at https://www.twilio.com/try-twilio## 📱 Platform Setup
+#### Start the Server#### Option B: Twilio SMSTWILIO_PHONE_NUMBER=+1234567890
 
-2. Get a phone number
 
-3. Copy credentials from console### Option 1: Telegram (Easier for Testing)
-
-
-
-### Start the Server1. **Create a bot:**
-
-   - Message [@BotFather](https://t.me/botfather) on Telegram
-
-```bash   - Send `/newbot` and follow instructions
-
-source venv/bin/activate   - Copy the bot token
-
-python main.py
-
-```2. **Set webhook:**
-
-```bash
-
-You should see:curl -X POST "https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setWebhook?url=https://your-domain.com/webhook/telegram"
-
-``````
-
-🚀 Starting HydraBot...
-
-✅ Database initialized successfully3. **For local testing, use ngrok:**
-
-⏰ Scheduler started - checking for reminders every minute```bash
-
-✅ HydraBot is running!ngrok http 8000
-
-```# Use the ngrok URL for webhook
-
-```
-
----
-
-### Option 2: Twilio (SMS)
-
-## 🌐 Webhook Setup (For Local Testing)
-
-1. **Sign up at [Twilio](https://www.twilio.com/)**
-
-### Using ngrok (Easiest)
-
-2. **Get credentials:**
-
-```bash   - Account SID
-
-# Install ngrok   - Auth Token
-
-sudo snap install ngrok   - Phone Number
-
-
-
-# Authenticate (get token from https://dashboard.ngrok.com)3. **Configure webhook:**
-
-ngrok config add-authtoken YOUR_NGROK_TOKEN   - Go to Phone Numbers → Active Numbers → Your Number
-
-   - Under "Messaging", set webhook URL to: `https://your-domain.com/webhook/twilio`
-
-# Start tunnel   - Set HTTP method to POST
-
-ngrok http 8000
-
-```## 💬 How to Use
-
-
-
-Copy the `https://` URL (e.g., `https://abc123.ngrok-free.app`)### Basic Commands
-
-
-
-### Configure Webhook**Create recurring reminder:**
-
-```
-
-**For Telegram:**remind me to drink water every 2 hours
-
-```bashremind me to stretch every 30 minutes
-
-curl -X POST "https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setWebhook?url=https://abc123.ngrok-free.app/webhook/telegram"```
-
-```
-
-**Create one-time reminder:**
-
-**For Twilio:**```
-
-1. Go to Twilio Console → Phone Numbers → Your Numberremind me to call mom at 6pm
-
-2. Under "Messaging", set webhook to: `https://abc123.ngrok-free.app/webhook/twilio`remind me to take medication at 9:30am
-
-3. HTTP Method: POST```
-
-
-
-### Verify Webhook**Mark reminder complete:**
-
-```
-
-**Telegram:**done
 
 ```bash```
 
-curl "https://api.telegram.org/bot<YOUR_TOKEN>/getWebhookInfo"(Send this in response to any reminder)
+source venv/bin/activate
+
+python main.py```env
 
 ```
 
-**List active reminders:**
+MESSAGING_PLATFORM=twilio5. **Run the application:**
 
-**Twilio:**```
+You should see:
 
-Check your Twilio console logs for webhook activity.list reminders
+```TWILIO_ACCOUNT_SID=your_account_sid```bash
 
-```
+🚀 Starting HydraBot...
 
----
+✅ Database initialized successfullyTWILIO_AUTH_TOKEN=your_auth_tokenpython main.py
 
-**Cancel specific reminders:**
+⏰ Scheduler started - checking for reminders every minute
 
-## 💬 How to Use```
-
-cancel water reminders
-
-### Supported Commandscancel stretch reminders
+✅ HydraBot is running!TWILIO_PHONE_NUMBER=+1234567890```
 
 ```
 
-| Command | Example | Description |
-
-|---------|---------|-------------|**Cancel all reminders:**
-
-| **Recurring Reminder** | `remind me to drink water every 2 hours` | Sets up automatic reminders |```
-
-| **One-Time Reminder** | `remind me to call mom at 6pm` | Reminder at specific time |cancel all reminders
-
-| **List Reminders** | `list reminders` | Shows all active reminders |```
-
-| **Cancel Specific** | `cancel water reminders` | Cancels reminders with keyword |
-
-| **Cancel All** | `cancel all reminders` | Removes all reminders |**View stats:**
-
-| **Mark Complete** | `done` | Marks last reminder as done |```
-
-| **View Stats** | `stats` | Shows streak & completion history |stats
-
 ```
 
-### Example ConversationShows your hydration streak, total completions, and recent activity.
+#### Webhook Setup (For Local Testing)
 
+The server will start on `http://localhost:8000`
 
+**Using ngrok:**
 
-```## 🏗️ Architecture
-
-You: remind me to drink water every 2 hours
-
-```
-
-Bot: ✅ Reminder set! I'll remind you to 'drink water' every 2 hours. hydrabot/
-
-     Reply 'done' when you complete it.├── main.py                 # FastAPI application & webhooks
-
-├── models.py               # SQLAlchemy database models
-
-[2 hours later...]├── reminder_service.py     # Core reminder logic & parsing
-
-├── messaging_service.py    # Twilio/Telegram integrations
-
-Bot: ⏰ Reminder: drink water├── scheduler.py            # APScheduler for sending reminders
-
-     Reply 'done' when complete!├── requirements.txt        # Python dependencies
-
-├── .env.example           # Environment variables template
-
-You: done└── README.md              # This file
-
-```
-
-Bot: ✅ Great job! Marked 'drink water' as complete. 
-
-     I'll remind you again in 2 hours.### Key Components
-
-
-
-You: stats1. **FastAPI Backend** - Handles webhooks and REST API
-
-2. **SQLAlchemy ORM** - Database models for users, reminders, logs
-
-Bot: 📊 Your HydraBot Stats:3. **APScheduler** - Background scheduler checks for due reminders every minute
-
-     🔥 Hydration streak: 3 days4. **Messaging Service** - Unified interface for SMS/Telegram
-
-     ✅ Total completions: 125. **Reminder Service** - Parses commands, manages reminders
-
-     📋 Active reminders: 1
-
-```## 📊 Database Schema
-
-
-
----**Users**
-
-- `id`, `platform`, `platform_id`, `created_at`
-
-## 🛠️ CLI Management Tool
-
-**Reminders**
-
-HydraBot includes a CLI for managing the database:- `id`, `user_id`, `title`, `interval_minutes`, `scheduled_time`
-
-- `is_recurring`, `is_active`, `last_sent_at`, `next_send_at`
+**Get Twilio Credentials:**
 
 ```bash
 
-# View statistics**ReminderLogs**
+# Install ngrok1. Sign up at https://www.twilio.com/try-twilio## 📱 Platform Setup
 
-python cli.py stats- `id`, `user_id`, `reminder_id`, `action`, `reminder_title`, `timestamp`
+sudo snap install ngrok
 
+2. Get a phone number
 
+# Authenticate
 
-# List all users## 🔧 API Endpoints
-
-python cli.py users
-
-### Webhooks
-
-# List active reminders- `POST /webhook/twilio` - Twilio SMS webhook
-
-python cli.py reminders- `POST /webhook/telegram` - Telegram bot webhook
+ngrok config add-authtoken YOUR_NGROK_TOKEN3. Copy credentials from console### Option 1: Telegram (Easier for Testing)
 
 
 
-# View recent logs### Testing Endpoints
+# Start tunnel
 
-python cli.py logs- `GET /` - Health check
+ngrok http 8000
 
-- `GET /api/reminders/{platform}/{platform_id}` - Get user reminders
+```### Start the Server1. **Create a bot:**
 
-# Clean up old inactive reminders- `GET /api/stats/{platform}/{platform_id}` - Get user stats
 
-python cli.py clean
 
-## 🚢 Deployment
+**For Telegram:**   - Message [@BotFather](https://t.me/botfather) on Telegram
 
-# Get help
+```bash
 
-python cli.py help### Replit
+curl -X POST "https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setWebhook?url=https://abc123.ngrok-free.app/webhook/telegram"```bash   - Send `/newbot` and follow instructions
 
 ```
 
-1. Import repository
+source venv/bin/activate   - Copy the bot token
 
----2. Add secrets (environment variables)
+**For Twilio:**
 
-3. Run `python main.py`
+1. Go to Twilio Console → Phone Numbers → Your Numberpython main.py
 
-## 📊 Architecture4. Use Replit URL for webhooks
+2. Under "Messaging", set webhook to: `https://abc123.ngrok-free.app/webhook/twilio`
 
-
-
-### Project Structure### Render
+3. HTTP Method: POST```2. **Set webhook:**
 
 
 
-```1. Create new Web Service
-
-hydrabot/2. Connect repository
-
-├── main.py              # FastAPI app & webhooks3. Build Command: `pip install -r requirements.txt`
-
-├── models.py            # Database models (SQLAlchemy)4. Start Command: `python main.py`
-
-├── reminder_service.py  # Core logic & command parsing5. Add environment variables
-
-├── messaging_service.py # Twilio/Telegram integrations6. Use Render URL for webhooks
-
-├── scheduler.py         # Background reminder sender
-
-├── cli.py              # Management CLI tool### Railway
-
-├── test_setup.py       # Configuration validator
-
-├── requirements.txt     # Dependencies1. New Project → Deploy from GitHub
-
-├── .env                # Configuration (create from .env.example)2. Add environment variables
-
-├── Dockerfile          # Container build3. Deploy
-
-└── docker-compose.yml  # Docker orchestration4. Use Railway URL for webhooks
-
-```
-
-### Docker (Optional)
-
-### Database Schema
-
-```dockerfile
-
-**Users**FROM python:3.11-slim
-
-- Tracks users by platform (SMS/Telegram) and platform ID
-
-- Links to reminders and activity logsWORKDIR /app
-
-COPY requirements.txt .
-
-**Reminders**RUN pip install -r requirements.txt
-
-- Stores recurring and one-time reminders
-
-- Tracks timing: `last_sent_at`, `next_send_at`COPY . .
-
-- Active/inactive status
-
-CMD ["python", "main.py"]
-
-**ReminderLogs**```
-
-- Complete audit trail
-
-- Actions: created, sent, completed, cancelled```bash
-
-- Used for stats and streak calculationdocker build -t hydrabot .
-
-docker run -p 8000:8000 --env-file .env hydrabot
-
-### How It Works```
+</details>```bash
 
 
 
-```## 🧪 Testing
+---You should see:curl -X POST "https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setWebhook?url=https://your-domain.com/webhook/telegram"
 
-User sends message
 
-      ↓### Local Testing with Telegram
 
-Webhook receives message
+### Commands``````
 
-      ↓1. Start the app: `python main.py`
 
-parse_command() extracts intent2. Start ngrok: `ngrok http 8000`
 
-      ↓3. Set webhook with ngrok URL
+| Command | Example | Description |🚀 Starting HydraBot...
 
-ReminderService creates/updates reminder4. Message your bot on Telegram
+|---------|---------|-------------|
 
-      ↓
+| **Recurring Reminder** | `remind me to drink water every 2 hours` | Sets up automatic reminders |✅ Database initialized successfully3. **For local testing, use ngrok:**
 
-Response sent back to user### Manual API Testing
+| **One-Time Reminder** | `remind me to call mom at 6pm` | Reminder at specific time |
 
-      ↓
+| **List Reminders** | `list reminders` | Shows all active reminders |⏰ Scheduler started - checking for reminders every minute```bash
 
-Scheduler checks every minute```bash
+| **Cancel Specific** | `cancel water reminders` | Cancels reminders with keyword |
 
-      ↓# Check health
+| **Cancel All** | `cancel all reminders` | Removes all reminders |✅ HydraBot is running!ngrok http 8000
 
-Due reminders sent automaticallycurl http://localhost:8000
+| **Mark Complete** | `done` | Marks last reminder as done |
 
-      ↓
+| **View Stats** | `stats` | Shows streak & completion history |```# Use the ngrok URL for webhook
 
-User replies "done"# Get reminders for a user
 
-      ↓curl http://localhost:8000/api/reminders/telegram/123456789
 
-Reminder marked complete, interval resets
+### Example Conversation```
 
-```# Get stats
 
-curl http://localhost:8000/api/stats/telegram/123456789
+
+```---
+
+You: remind me to drink water every 2 hours
+
+### Option 2: Twilio (SMS)
+
+Bot: ✅ Reminder set! I'll remind you to 'drink water' every 2 hours. 
+
+     Reply 'done' when you complete it.## 🌐 Webhook Setup (For Local Testing)
+
+
+
+[2 hours later...]1. **Sign up at [Twilio](https://www.twilio.com/)**
+
+
+
+Bot: ⏰ Reminder: drink water### Using ngrok (Easiest)
+
+     Reply 'done' when complete!
+
+2. **Get credentials:**
+
+You: done
+
+```bash   - Account SID
+
+Bot: ✅ Great job! Marked 'drink water' as complete. 
+
+     I'll remind you again in 2 hours.# Install ngrok   - Auth Token
+
+
+
+You: statssudo snap install ngrok   - Phone Number
+
+
+
+Bot: 📊 Your HydraBot Stats:
+
+     🔥 Hydration streak: 3 days
+
+     ✅ Total completions: 12# Authenticate (get token from https://dashboard.ngrok.com)3. **Configure webhook:**
+
+     📋 Active reminders: 1
+
+```ngrok config add-authtoken YOUR_NGROK_TOKEN   - Go to Phone Numbers → Active Numbers → Your Number
+
+
+
+---   - Under "Messaging", set webhook URL to: `https://your-domain.com/webhook/twilio`
+
+
+
+## Deployment# Start tunnel   - Set HTTP method to POST
+
+
+
+### Option #1 - Docker (Recommended)ngrok http 8000
+
+1. Clone the repo
+
+2. Update `.env` with your credentials```## 💬 How to Use
+
+3. Run `docker-compose up -d`
+
+4. Configure webhook with your domain
+
+
+
+### Option #2 - Cloud PlatformsCopy the `https://` URL (e.g., `https://abc123.ngrok-free.app`)### Basic Commands
+
+
+
+<details><summary>Platform-Specific Guides</summary>
+
+
+
+#### Replit### Configure Webhook**Create recurring reminder:**
+
+1. Import repository to Replit
+
+2. Add secrets (environment variables)```
+
+3. Click Run
+
+4. Use Replit URL for webhook**For Telegram:**remind me to drink water every 2 hours
+
+
+
+#### Render```bashremind me to stretch every 30 minutes
+
+1. Create new Web Service
+
+2. Connect GitHub repositorycurl -X POST "https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setWebhook?url=https://abc123.ngrok-free.app/webhook/telegram"```
+
+3. Build Command: `pip install -r requirements.txt`
+
+4. Start Command: `python main.py````
+
+5. Add environment variables
+
+6. Use Render URL for webhook**Create one-time reminder:**
+
+
+
+#### Railway**For Twilio:**```
+
+1. New Project → Deploy from GitHub
+
+2. Add environment variables1. Go to Twilio Console → Phone Numbers → Your Numberremind me to call mom at 6pm
+
+3. Auto-deploy enabled
+
+4. Use Railway URL for webhook2. Under "Messaging", set webhook to: `https://abc123.ngrok-free.app/webhook/twilio`remind me to take medication at 9:30am
+
+
+
+#### VPS/Cloud Server3. HTTP Method: POST```
+
+```bash
+
+# Install dependencies
+
+sudo apt update
+
+sudo apt install python3-pip python3-venv### Verify Webhook**Mark reminder complete:**
+
+
+
+# Set up project```
+
+git clone https://github.com/Daniel-wambua/hydrabot.git
+
+cd hydrabot**Telegram:**done
+
+python3 -m venv venv
+
+source venv/bin/activate```bash```
+
+pip install -r requirements.txt
+
+curl "https://api.telegram.org/bot<YOUR_TOKEN>/getWebhookInfo"(Send this in response to any reminder)
+
+# Configure
+
+cp .env.example .env```
+
+nano .env  # Add your credentials
+
+**List active reminders:**
+
+# Run with systemd or supervisor
+
+```**Twilio:**```
+
+
+
+</details>Check your Twilio console logs for webhook activity.list reminders
+
+
 
 ---```
 
 
 
-## 🚢 Deployment## 📝 Environment Variables
+## Architecture---
 
 
 
-### Option 1: Replit (Easiest)| Variable | Description | Required |
+### Project Structure**Cancel specific reminders:**
+
+
+
+```## 💬 How to Use```
+
+hydrabot/
+
+├── main.py              # FastAPI app & webhookscancel water reminders
+
+├── models.py            # Database models (SQLAlchemy)
+
+├── reminder_service.py  # Core logic & command parsing### Supported Commandscancel stretch reminders
+
+├── messaging_service.py # Twilio/Telegram integrations
+
+├── scheduler.py         # Background reminder sender```
+
+├── cli.py              # Management CLI tool
+
+├── test_setup.py       # Configuration validator| Command | Example | Description |
+
+├── requirements.txt     # Dependencies
+
+├── .env                # Configuration (create from .env.example)|---------|---------|-------------|**Cancel all reminders:**
+
+├── Dockerfile          # Container build
+
+└── docker-compose.yml  # Docker orchestration| **Recurring Reminder** | `remind me to drink water every 2 hours` | Sets up automatic reminders |```
+
+```
+
+| **One-Time Reminder** | `remind me to call mom at 6pm` | Reminder at specific time |cancel all reminders
+
+### How It Works
+
+| **List Reminders** | `list reminders` | Shows all active reminders |```
+
+```mermaid
+
+flowchart LR| **Cancel Specific** | `cancel water reminders` | Cancels reminders with keyword |
+
+    A[User sends message] --> B[Webhook receives]
+
+    B --> C[Parse command]| **Cancel All** | `cancel all reminders` | Removes all reminders |**View stats:**
+
+    C --> D[ReminderService]
+
+    D --> E[Database update]| **Mark Complete** | `done` | Marks last reminder as done |```
+
+    E --> F[Response sent]
+
+    | **View Stats** | `stats` | Shows streak & completion history |stats
+
+    G[Scheduler checks] --> H{Due reminders?}
+
+    H -->|Yes| I[Send reminder]```
+
+    H -->|No| G
+
+    ### Example ConversationShows your hydration streak, total completions, and recent activity.
+
+    I --> J[User replies 'done']
+
+    J --> K[Mark complete]
+
+    K --> L[Reset interval]
+
+``````## 🏗️ Architecture
+
+
+
+### Database SchemaYou: remind me to drink water every 2 hours
+
+
+
+- **Users** - Tracks users by platform (SMS/Telegram) and platform ID```
+
+- **Reminders** - Stores recurring and one-time reminders with timing info
+
+- **ReminderLogs** - Complete audit trail for stats and streak calculationBot: ✅ Reminder set! I'll remind you to 'drink water' every 2 hours. hydrabot/
+
+
+
+---     Reply 'done' when you complete it.├── main.py                 # FastAPI application & webhooks
+
+
+
+## CLI Management Tool├── models.py               # SQLAlchemy database models
+
+
+
+```bash[2 hours later...]├── reminder_service.py     # Core reminder logic & parsing
+
+# View statistics
+
+python cli.py stats├── messaging_service.py    # Twilio/Telegram integrations
+
+
+
+# List all usersBot: ⏰ Reminder: drink water├── scheduler.py            # APScheduler for sending reminders
+
+python cli.py users
+
+     Reply 'done' when complete!├── requirements.txt        # Python dependencies
+
+# List active reminders
+
+python cli.py reminders├── .env.example           # Environment variables template
+
+
+
+# View recent logsYou: done└── README.md              # This file
+
+python cli.py logs
+
+```
+
+# Clean up old inactive reminders
+
+python cli.py cleanBot: ✅ Great job! Marked 'drink water' as complete. 
+
+```
+
+     I'll remind you again in 2 hours.### Key Components
+
+---
+
+
+
+## Testing
+
+You: stats1. **FastAPI Backend** - Handles webhooks and REST API
+
+### Quick Test
+
+2. **SQLAlchemy ORM** - Database models for users, reminders, logs
+
+```bash
+
+# Run configuration testBot: 📊 Your HydraBot Stats:3. **APScheduler** - Background scheduler checks for due reminders every minute
+
+python test_setup.py
+
+     🔥 Hydration streak: 3 days4. **Messaging Service** - Unified interface for SMS/Telegram
+
+# Check server health
+
+curl http://localhost:8000     ✅ Total completions: 125. **Reminder Service** - Parses commands, manages reminders
+
+
+
+# View API docs     📋 Active reminders: 1
+
+open http://localhost:8000/docs
+
+``````## 📊 Database Schema
+
+
+
+### Manual Testing Checklist
+
+
+
+- [ ] Send: "remind me to test every 1 hour"---**Users**
+
+- [ ] Verify: Confirmation received
+
+- [ ] Send: "list reminders"- `id`, `platform`, `platform_id`, `created_at`
+
+- [ ] Verify: Test reminder appears
+
+- [ ] Wait for reminder notification## 🛠️ CLI Management Tool
+
+- [ ] Send: "done"
+
+- [ ] Verify: Completion confirmed**Reminders**
+
+- [ ] Send: "stats"
+
+- [ ] Verify: Stats show 1 completionHydraBot includes a CLI for managing the database:- `id`, `user_id`, `title`, `interval_minutes`, `scheduled_time`
+
+
+
+---- `is_recurring`, `is_active`, `last_sent_at`, `next_send_at`
+
+
+
+## Configuration```bash
+
+
+
+### Environment Variables# View statistics**ReminderLogs**
+
+
+
+| Variable | Description | Required |python cli.py stats- `id`, `user_id`, `reminder_id`, `action`, `reminder_title`, `timestamp`
 
 |----------|-------------|----------|
 
-1. Import repository to Replit| `PORT` | Server port (default: 8000) | No |
+| `PORT` | Server port (default: 8000) | No |
 
-2. Add secrets (environment variables)| `HOST` | Server host (default: 0.0.0.0) | No |
+| `HOST` | Server host (default: 0.0.0.0) | No |
+
+| `MESSAGING_PLATFORM` | `telegram` or `twilio` | Yes |# List all users## 🔧 API Endpoints
+
+| `TELEGRAM_BOT_TOKEN` | Telegram bot token | If using Telegram |
+
+| `TWILIO_ACCOUNT_SID` | Twilio account SID | If using Twilio |python cli.py users
+
+| `TWILIO_AUTH_TOKEN` | Twilio auth token | If using Twilio |
+
+| `TWILIO_PHONE_NUMBER` | Twilio phone number | If using Twilio |### Webhooks
+
+| `DATABASE_URL` | Database URL (default: sqlite) | No |
+
+# List active reminders- `POST /webhook/twilio` - Twilio SMS webhook
+
+---
+
+python cli.py reminders- `POST /webhook/telegram` - Telegram bot webhook
+
+## Troubleshooting
+
+
+
+<details><summary>Common Issues & Solutions</summary>
+
+# View recent logs### Testing Endpoints
+
+### Bot Not Responding
+
+python cli.py logs- `GET /` - Health check
+
+**Check webhook:**
+
+```bash- `GET /api/reminders/{platform}/{platform_id}` - Get user reminders
+
+# Telegram
+
+curl "https://api.telegram.org/bot<TOKEN>/getWebhookInfo"# Clean up old inactive reminders- `GET /api/stats/{platform}/{platform_id}` - Get user stats
+
+```
+
+python cli.py clean
+
+**Reset webhook:**
+
+```bash## 🚢 Deployment
+
+curl -X POST "https://api.telegram.org/bot<TOKEN>/setWebhook?url=https://your-url.com/webhook/telegram"
+
+```# Get help
+
+
+
+**Check logs:**python cli.py help### Replit
+
+- Look for errors in terminal where `main.py` is running
+
+- Verify ngrok is still running (URLs change on restart)```
+
+
+
+### Reminders Not Sending1. Import repository
+
+
+
+- Look for "⏰ Scheduler started" in logs---2. Add secrets (environment variables)
+
+- Check for "📬 Found X due reminder(s)" messages
+
+- Run `python cli.py reminders` to verify database3. Run `python main.py`
+
+
+
+### Database Issues## 📊 Architecture4. Use Replit URL for webhooks
+
+
+
+**Reset database (WARNING: deletes all data):**
+
+```bash
+
+rm hydrabot.db### Project Structure### Render
+
+python -c "from models import init_db; init_db()"
+
+```
+
+
+
+### Module Not Found Errors```1. Create new Web Service
+
+
+
+```bashhydrabot/2. Connect repository
+
+source venv/bin/activate
+
+pip install -r requirements.txt├── main.py              # FastAPI app & webhooks3. Build Command: `pip install -r requirements.txt`
+
+```
+
+├── models.py            # Database models (SQLAlchemy)4. Start Command: `python main.py`
+
+</details>
+
+├── reminder_service.py  # Core logic & command parsing5. Add environment variables
+
+---
+
+├── messaging_service.py # Twilio/Telegram integrations6. Use Render URL for webhooks
+
+## Performance & Scalability
+
+├── scheduler.py         # Background reminder sender
+
+### Current Capabilities
+
+- **Response Time:** < 500ms for commands├── cli.py              # Management CLI tool### Railway
+
+- **Reminder Accuracy:** ±60 seconds
+
+- **Database:** SQLite (good for 1000s of users)├── test_setup.py       # Configuration validator
+
+- **Concurrent Users:** 100+ with proper hosting
+
+├── requirements.txt     # Dependencies1. New Project → Deploy from GitHub
+
+### Scaling Recommendations
+
+├── .env                # Configuration (create from .env.example)2. Add environment variables
+
+**100+ users → PostgreSQL**
+
+```env├── Dockerfile          # Container build3. Deploy
+
+DATABASE_URL=postgresql://user:password@host:5432/hydrabot
+
+```└── docker-compose.yml  # Docker orchestration4. Use Railway URL for webhooks
+
+
+
+**1000+ users → Redis + Celery**```
+
+- Replace APScheduler with Celery
+
+- Use Redis for task queue### Docker (Optional)
+
+- Add worker processes
+
+### Database Schema
+
+---
+
+```dockerfile
+
+## Roadmap
+
+**Users**FROM python:3.11-slim
+
+- [ ] Multiple reminder types (water, medication, tasks)
+
+- [ ] Timezone support- Tracks users by platform (SMS/Telegram) and platform ID
+
+- [ ] Reminder templates
+
+- [ ] Group/shared reminders- Links to reminders and activity logsWORKDIR /app
+
+- [ ] Web dashboard
+
+- [ ] Voice message supportCOPY requirements.txt .
+
+- [ ] Integration with health apps (Fitbit, Apple Health)
+
+- [ ] WhatsApp support**Reminders**RUN pip install -r requirements.txt
+
+- [ ] Discord bot integration
+
+- [ ] Smart scheduling (ML-based timing)- Stores recurring and one-time reminders
+
+
+
+---- Tracks timing: `last_sent_at`, `next_send_at`COPY . .
+
+
+
+## Contributing- Active/inactive status
+
+
+
+### Pull RequestsCMD ["python", "main.py"]
+
+Contributions welcome! Areas for improvement:
+
+- Better NLP for command parsing**ReminderLogs**```
+
+- More platforms (WhatsApp, Discord, Slack)
+
+- Unit and integration tests- Complete audit trail
+
+- Web dashboard UI
+
+- Additional features from roadmap- Actions: created, sent, completed, cancelled```bash
+
+
+
+### Issues- Used for stats and streak calculationdocker build -t hydrabot .
+
+Found a bug? Have a suggestion? Open an issue on GitHub!
+
+docker run -p 8000:8000 --env-file .env hydrabot
+
+---
+
+### How It Works```
+
+## Attribution
+
+
+
+This project uses the following open-source libraries:
+
+```## 🧪 Testing
+
+- [FastAPI](https://fastapi.tiangolo.com/) - Modern web framework
+
+- [SQLAlchemy](https://www.sqlalchemy.org/) - SQL toolkit and ORMUser sends message
+
+- [APScheduler](https://apscheduler.readthedocs.io/) - Task scheduling
+
+- [Twilio](https://www.twilio.com/) - SMS API      ↓### Local Testing with Telegram
+
+- [python-telegram-bot](https://python-telegram-bot.org/) - Telegram Bot API
+
+Webhook receives message
+
+---
+
+      ↓1. Start the app: `python main.py`
+
+## Contributors
+
+parse_command() extracts intent2. Start ngrok: `ngrok http 8000`
+
+- [Daniel Wambua](https://github.com/Daniel-wambua) - Creator & Maintainer
+
+      ↓3. Set webhook with ngrok URL
+
+---
+
+ReminderService creates/updates reminder4. Message your bot on Telegram
+
+## License
+
+      ↓
+
+> _**[Daniel-wambua/hydrabot](https://github.com/Daniel-wambua/hydrabot)** is licensed under [MIT](https://github.com/Daniel-wambua/hydrabot/blob/HEAD/LICENSE) © [Daniel Wambua](https://danielwambua.dev) 2025._<br>
+
+> <sup align="right">For information, see <a href="https://tldrlegal.com/license/mit-license">TLDR Legal > MIT</a></sup>Response sent back to user### Manual API Testing
+
+
+
+<details>      ↓
+
+<summary>Expand License</summary>
+
+Scheduler checks every minute```bash
+
+```
+
+The MIT License (MIT)      ↓# Check health
+
+Copyright (c) Daniel Wambua <daniel@wambua.com>
+
+Due reminders sent automaticallycurl http://localhost:8000
+
+Permission is hereby granted, free of charge, to any person obtaining a copy 
+
+of this software and associated documentation files (the "Software"), to deal       ↓
+
+in the Software without restriction, including without limitation the rights 
+
+to use, copy, modify, merge, publish, distribute, sub-license, and/or sell User replies "done"# Get reminders for a user
+
+copies of the Software, and to permit persons to whom the Software is furnished 
+
+to do so, subject to the following conditions:      ↓curl http://localhost:8000/api/reminders/telegram/123456789
+
+
+
+The above copyright notice and this permission notice shall be included in all Reminder marked complete, interval resets
+
+copies or substantial portions of the Software.
+
+```# Get stats
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR Acurl http://localhost:8000/api/stats/telegram/123456789
+
+PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION---```
+
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+```
+
+## 🚢 Deployment## 📝 Environment Variables
+
+</details>
+
+
+
+---
+
+### Option 1: Replit (Easiest)| Variable | Description | Required |
+
+<!-- License + Copyright -->
+
+<p align="center">|----------|-------------|----------|
+
+  <i>© <a href="https://danielwambua.dev">Daniel Wambua</a> 2025</i><br>
+
+  <i>Licensed under <a href="https://gist.github.com/Daniel-wambua/143d2ee01ccc5c052a17">MIT</a></i><br>1. Import repository to Replit| `PORT` | Server port (default: 8000) | No |
+
+  <a href="https://github.com/Daniel-wambua"><img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" /></a><br>
+
+  <sup>Thanks for visiting :)</sup>2. Add secrets (environment variables)| `HOST` | Server host (default: 0.0.0.0) | No |
+
+</p>
 
 3. Click Run| `MESSAGING_PLATFORM` | `telegram` or `twilio` | Yes |
 
-4. Use Replit URL for webhook| `TELEGRAM_BOT_TOKEN` | Telegram bot token | If using Telegram |
+<!-- Dinosaur -->
 
-| `TWILIO_ACCOUNT_SID` | Twilio account SID | If using Twilio |
+<!-- 4. Use Replit URL for webhook| `TELEGRAM_BOT_TOKEN` | Telegram bot token | If using Telegram |
 
-### Option 2: Render| `TWILIO_AUTH_TOKEN` | Twilio auth token | If using Twilio |
+                        . - ~ ~ ~ - .
 
-| `TWILIO_PHONE_NUMBER` | Twilio phone number | If using Twilio |
+      ..     _      .-~               ~-.| `TWILIO_ACCOUNT_SID` | Twilio account SID | If using Twilio |
 
-1. Create new Web Service| `DATABASE_URL` | Database URL (default: sqlite:///./hydrabot.db) | No |
+     //|     \ `..~                      `.
 
-2. Connect GitHub repository
+    || |      }  }              /       \  \### Option 2: Render| `TWILIO_AUTH_TOKEN` | Twilio auth token | If using Twilio |
+
+(\   \\ \~^..'                 |         }  \
+
+ \`.-~  o      /       }       |        /    \| `TWILIO_PHONE_NUMBER` | Twilio phone number | If using Twilio |
+
+ (__          |       /        |       /      `.
+
+  `- - ~ ~ -._|      /_ - ~ ~ ^|      /- _      `.1. Create new Web Service| `DATABASE_URL` | Database URL (default: sqlite:///./hydrabot.db) | No |
+
+              |     /          |     /     ~-.     ~- _
+
+              |_____|          |_____|         ~ - . _ _~_-_2. Connect GitHub repository
+
+-->
 
 3. Build Command: `pip install -r requirements.txt`## 🐛 Troubleshooting
 
@@ -936,13 +1476,7 @@ This MVP is successful when:
 - ✅ Setup takes < 10 minutes
 - ✅ Code is readable and maintainable
 
----
 
-**Built with ❤️ using FastAPI, SQLAlchemy, and APScheduler**
-
-Ready to deploy and test with real users in under 10 minutes! 🚀
-
----
 
 ## Quick Reference Card
 
@@ -974,3 +1508,10 @@ Ready to deploy and test with real users in under 10 minutes! 🚀
 - Check webhook: curl bot.api
 - View logs: tail terminal
 ```
+---
+
+**Built with ❤️ using FastAPI, SQLAlchemy, and APScheduler**
+
+Ready to deploy and test with real users in under 10 minutes! 🚀
+
+---
